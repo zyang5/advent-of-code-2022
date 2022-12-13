@@ -10,7 +10,6 @@ def parse_crates(raw_lines: List[str]) -> List[List[str]]:
         stripped_line = raw_line.replace("[", "").replace("]", "")
         stripped_line = stripped_line.replace("   ", "")
         crates = stripped_line.split(" ")
-        print(crates)
         for i, crate in enumerate(crates):
             if not crate:
                 continue
